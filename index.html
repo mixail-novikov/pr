@@ -9,11 +9,13 @@
 <body>
 
 <div class="b-header">
-    <div class="header-logo">
-        <a href="#" class="header-logo-link"><img class="header-logo-image" src="img/logo-header.png" alt=""></a>
-    </div>
-    <div class="header-button">
-        <a href="request.html" class="b-button button-small js-popup popup-ajax"><i class="button-icon b-icon icon-arrow-right"></i> ХОЧУ БЫТЬ БЕТА-ТЕСТЕРОМ</a>
+    <div class="header-wrapper">
+        <div class="header-logo">
+            <a href="#" class="header-logo-link"><img class="header-logo-image" src="img/logo-header.png" alt=""></a>
+        </div>
+        <div class="header-button">
+            <a href="request-beta.html" class="b-button button-small js-popup popup-ajax"><i class="button-icon b-icon icon-arrow-right"></i> ХОЧУ БЫТЬ БЕТА-ТЕСТЕРОМ</a>
+        </div>
     </div>
 </div>
 
@@ -24,7 +26,7 @@
                 Помогаем запускать бизнес онлайн-торговли, автоматизируем процессы между клиентом и продавцом
             </div>
             <div class="welcome-button-holder">
-                <a href="request.html" class="js-popup popup-ajax welcome-button b-button button-transparent">Попробовать первым</a>
+                <a href="request-beta.html" class="js-scroll-request welcome-button b-button button-transparent">Попробовать первым</a>
             </div>
         </div>
         <div class="welcome-intro">
@@ -128,21 +130,43 @@
     </div>
 </div>
 
-<div class="b-request">
+<div class="b-request" id="request">
     <div class="b-wrapper">
-        <div class="request-heading">
-            Укажите  вашу электронную почту и узнайте о запуске PostRadar первым
+        <div class="request-invite">
+            <div class="request-heading">
+                Укажите  вашу электронную почту и узнайте о запуске PostRadar первым
+            </div>
+            <form class="b-form js-form form-subscribe" method="GET" action="request-subscribe-process.json"> <!-- change to POST -->
+                <div class="form-errors"></div>
+                <div class="request-form">
+                    <div class="request-form-input-holder">
+                        <input type="text" class="b-input request-form-input" placeholder="Ваша эл.почта" required>
+                    </div>
+                    <div class="request-form-button-holder">
+                        <button class="b-button request-form-button" type="submit">Сообщить мне</button>
+                    </div>
+                </div>
+            </form>
+            <div class="request-text">
+                Мы набираем команду бета-тестеров, чтобы мы отправили вам доступ с сервису <strong><a href="request-beta.html" class="js-popup popup-ajax">заполните форму</a></strong>
+            </div>
         </div>
-        <form class="request-form">
-            <div class="request-form-input-holder">
-                <input type="text" class="b-input request-form-input" placeholder="Ваша эл.почта">
+        <div class="request-result">
+            <div class="request-heading">
+                Расскажи о нас друзям и знакомым и получи +1 месяц бесплатного доступа!
             </div>
-            <div class="request-form-button-holder">
-                <button class="b-button request-form-button" type="submit">Сообщить мне</button>
+            <div class="request-form">
+                <div class="b-social">
+                    <div class="social-list">
+                        <a href="#" target="_blank" class="social-item item-fb"></a>
+                        <a href="#" target="_blank" class="social-item item-tw"></a>
+                        <a href="#" target="_blank" class="social-item item-vk"></a>
+                    </div>
+                </div>
             </div>
-        </form>
-        <div class="request-text">
-            Мы набираем команду бета-тестеров, чтобы мы отправили вам доступ с сервису <strong><a href="request.html" class="js-popup popup-ajax">заполните форму</a></strong>
+            <div class="request-text">
+                Мы набираем команду бета-тестеров, чтобы мы отправили вам доступ с сервису <strong><a href="request-beta.html" class="js-popup popup-ajax">заполните форму</a></strong>
+            </div>
         </div>
     </div>
 </div>

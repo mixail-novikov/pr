@@ -1,13 +1,14 @@
 <div class="b-popup popup-request">
-    <form class="b-form">
-        <div class="form-heading">
+    <form class="b-form js-form form-beta" action="request-beta-process.json" method="GET"> <!-- change to POST -->
+        <div class="popup-heading">
             Хочу быть бета-тестором
         </div>
+        <div class="form-errors"></div>
         <div class="form-row">
-            <input type="text" class="b-input" placeholder="Имя">
+            <input type="text" class="b-input" name="name" placeholder="Имя" required>
         </div>
         <div class="form-row">
-            <input type="text" class="b-input" placeholder="Ваша эл.почта">
+            <input type="email" class="b-input" name="email" placeholder="Ваша эл.почта" required>
         </div>
         <div class="form-row">
             <div class="popup-button-holder">

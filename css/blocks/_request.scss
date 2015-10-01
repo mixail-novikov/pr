@@ -5,6 +5,26 @@
   background-position: center;
   padding: 90px 0;
 
+  .request-invite {
+    display: block;
+  }
+
+  .request-result {
+    display: none;
+  }
+
+  &.show-result {
+    background-image: url($img + 'bg-request-result.jpg');
+
+    .request-invite {
+      display: none;
+    }
+
+    .request-result {
+      display: block;
+    }
+  }
+
   .request {
     &-heading {
       text-align: center;
@@ -41,6 +61,15 @@
       text-align: center;
       font-size: 28px;
       line-height: 48px;
+    }
+
+    &-result {
+      .request {
+        &-heading,
+        &-text {
+          color: #fff;
+        }
+      }
     }
   }
 }

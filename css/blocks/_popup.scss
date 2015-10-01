@@ -6,6 +6,10 @@
     margin: 0 auto;
     padding: 30px;
 
+    &.request-result {
+      max-width: 800px;
+    }
+
     .mfp-close {
       overflow: hidden;
       text-indent: 100%;
@@ -16,6 +20,14 @@
     }
 
     .popup {
+      &-heading {
+        font-size: 34px;
+        font-weight: bold;
+        line-height: 48px;
+        text-align: center;
+        margin-bottom: 45px;
+      }
+
       &-button {
         width: 100%;
 
