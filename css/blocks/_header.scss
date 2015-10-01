@@ -1,0 +1,21 @@
+.b-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  padding: 20px;
+
+  .header {
+    &-logo {
+      text-align: left;
+      @include span(1 of 2);
+      padding-top: 10px;
+    }
+
+    &-button {
+      text-align: right;
+      @include span(1 of 2);
+    }
+  }
+}

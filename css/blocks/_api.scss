@@ -1,0 +1,45 @@
+.b-api {
+  margin-bottom: 90px;
+
+  .api {
+    &-heading {
+      text-align: center;
+      margin-bottom: 65px;
+
+      &-icon {
+        position: relative;
+        left: -9px;
+      }
+    }
+
+    &-list {
+      @include clearfix;
+      @include margin(null -1*gutter() 30px);
+    }
+
+    &-item {
+      @include gallery(1 of 3);
+      height: 100px;
+      text-align: center;
+    }
+
+    &-icon {
+      &.icon-integration-wix {
+        position: relative;
+        top: -14px;
+      }
+
+      &.icon-integration-insales {
+        position: relative;
+        top: 21px;
+      }
+    }
+
+    &-text {
+      font-size: 34px;
+      font-weight: lighter;
+      line-height: 83px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+a {
+  color: #fd0b3b;
+
+  &:hover {
+    color: lighten(#fd0b3b, 10%);
+  }
+
+  &.link-as-text {
+    color: inherit;
+    text-decoration: inherit;
+    &:hover {
+      color: inherit;
+    }
+  }
+}

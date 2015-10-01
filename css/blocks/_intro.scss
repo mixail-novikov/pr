@@ -1,0 +1,34 @@
+.b-intro {
+  @include clearfix;
+  @include span(full nest);
+  .intro {
+    &-wrapper {
+      position: relative;
+      border-left: 4px solid #e9001a;
+      background-color: #fbf9f9;
+      padding: 50px 60px;
+      padding-right: 290px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: 43px;
+        top: 68px;
+        @extend .b-icon;
+        @extend .b-icon.icon-intro;
+      }
+    }
+
+    &-heading {
+      font-size: 34px;
+      line-height: 48px;
+      margin-bottom: 12px;
+      font-weight: normal;
+    }
+
+    &-text {
+      font-size: 18px;
+      line-height: 36px;
+    }
+  }
+}

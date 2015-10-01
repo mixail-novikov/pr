@@ -1,0 +1,186 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$api-name: 'api';
+$api-x: 234px;
+$api-y: 0px;
+$api-offset-x: -234px;
+$api-offset-y: 0px;
+$api-width: 111px;
+$api-height: 111px;
+$api-total-width: 419px;
+$api-total-height: 388px;
+$api-image: '../img/sprite.png';
+$api: (234px, 0px, -234px, 0px, 111px, 111px, 419px, 388px, '../img/sprite.png', 'api', );
+$arrow-right-name: 'arrow-right';
+$arrow-right-x: 371px;
+$arrow-right-y: 223px;
+$arrow-right-offset-x: -371px;
+$arrow-right-offset-y: -223px;
+$arrow-right-width: 9px;
+$arrow-right-height: 15px;
+$arrow-right-total-width: 419px;
+$arrow-right-total-height: 388px;
+$arrow-right-image: '../img/sprite.png';
+$arrow-right: (371px, 223px, -371px, -223px, 9px, 15px, 419px, 388px, '../img/sprite.png', 'arrow-right', );
+$integration-bitrix-name: 'integration-bitrix';
+$integration-bitrix-x: 88px;
+$integration-bitrix-y: 234px;
+$integration-bitrix-offset-x: -88px;
+$integration-bitrix-offset-y: -234px;
+$integration-bitrix-width: 86px;
+$integration-bitrix-height: 75px;
+$integration-bitrix-total-width: 419px;
+$integration-bitrix-total-height: 388px;
+$integration-bitrix-image: '../img/sprite.png';
+$integration-bitrix: (88px, 234px, -88px, -234px, 86px, 75px, 419px, 388px, '../img/sprite.png', 'integration-bitrix', );
+$integration-insales-name: 'integration-insales';
+$integration-insales-x: 161px;
+$integration-insales-y: 322px;
+$integration-insales-offset-x: -161px;
+$integration-insales-offset-y: -322px;
+$integration-insales-width: 98px;
+$integration-insales-height: 32px;
+$integration-insales-total-width: 419px;
+$integration-insales-total-height: 388px;
+$integration-insales-image: '../img/sprite.png';
+$integration-insales: (161px, 322px, -161px, -322px, 98px, 32px, 419px, 388px, '../img/sprite.png', 'integration-insales', );
+$integration-wix-name: 'integration-wix';
+$integration-wix-x: 234px;
+$integration-wix-y: 116px;
+$integration-wix-offset-x: -234px;
+$integration-wix-offset-y: -116px;
+$integration-wix-width: 101px;
+$integration-wix-height: 101px;
+$integration-wix-total-width: 419px;
+$integration-wix-total-height: 388px;
+$integration-wix-image: '../img/sprite.png';
+$integration-wix: (234px, 116px, -234px, -116px, 101px, 101px, 419px, 388px, '../img/sprite.png', 'integration-wix', );
+$intro-name: 'intro';
+$intro-x: 0px;
+$intro-y: 0px;
+$intro-offset-x: 0px;
+$intro-offset-y: 0px;
+$intro-width: 229px;
+$intro-height: 229px;
+$intro-total-width: 419px;
+$intro-total-height: 388px;
+$intro-image: '../img/sprite.png';
+$intro: (0px, 0px, 0px, 0px, 229px, 229px, 419px, 388px, '../img/sprite.png', 'intro', );
+$popup-close-name: 'popup-close';
+$popup-close-x: 350px;
+$popup-close-y: 223px;
+$popup-close-offset-x: -350px;
+$popup-close-offset-y: -223px;
+$popup-close-width: 16px;
+$popup-close-height: 16px;
+$popup-close-total-width: 419px;
+$popup-close-total-height: 388px;
+$popup-close-image: '../img/sprite.png';
+$popup-close: (350px, 223px, -350px, -223px, 16px, 16px, 419px, 388px, '../img/sprite.png', 'popup-close', );
+$service-address-name: 'service-address';
+$service-address-x: 350px;
+$service-address-y: 147px;
+$service-address-offset-x: -350px;
+$service-address-offset-y: -147px;
+$service-address-width: 56px;
+$service-address-height: 71px;
+$service-address-total-width: 419px;
+$service-address-total-height: 388px;
+$service-address-image: '../img/sprite.png';
+$service-address: (350px, 147px, -350px, -147px, 56px, 71px, 419px, 388px, '../img/sprite.png', 'service-address', );
+$service-callcenter-name: 'service-callcenter';
+$service-callcenter-x: 179px;
+$service-callcenter-y: 234px;
+$service-callcenter-offset-x: -179px;
+$service-callcenter-offset-y: -234px;
+$service-callcenter-width: 94px;
+$service-callcenter-height: 66px;
+$service-callcenter-total-width: 419px;
+$service-callcenter-total-height: 388px;
+$service-callcenter-image: '../img/sprite.png';
+$service-callcenter: (179px, 234px, -179px, -234px, 94px, 66px, 419px, 388px, '../img/sprite.png', 'service-callcenter', );
+$service-delivery-name: 'service-delivery';
+$service-delivery-x: 0px;
+$service-delivery-y: 322px;
+$service-delivery-offset-x: 0px;
+$service-delivery-offset-y: -322px;
+$service-delivery-width: 72px;
+$service-delivery-height: 66px;
+$service-delivery-total-width: 419px;
+$service-delivery-total-height: 388px;
+$service-delivery-image: '../img/sprite.png';
+$service-delivery: (0px, 322px, 0px, -322px, 72px, 66px, 419px, 388px, '../img/sprite.png', 'service-delivery', );
+$service-grade-name: 'service-grade';
+$service-grade-x: 77px;
+$service-grade-y: 322px;
+$service-grade-offset-x: -77px;
+$service-grade-offset-y: -322px;
+$service-grade-width: 79px;
+$service-grade-height: 57px;
+$service-grade-total-width: 419px;
+$service-grade-total-height: 388px;
+$service-grade-image: '../img/sprite.png';
+$service-grade: (77px, 322px, -77px, -322px, 79px, 57px, 419px, 388px, '../img/sprite.png', 'service-grade', );
+$service-location-name: 'service-location';
+$service-location-x: 350px;
+$service-location-y: 74px;
+$service-location-offset-x: -350px;
+$service-location-offset-y: -74px;
+$service-location-width: 69px;
+$service-location-height: 68px;
+$service-location-total-width: 419px;
+$service-location-total-height: 388px;
+$service-location-image: '../img/sprite.png';
+$service-location: (350px, 74px, -350px, -74px, 69px, 68px, 419px, 388px, '../img/sprite.png', 'service-location', );
+$service-phone-name: 'service-phone';
+$service-phone-x: 350px;
+$service-phone-y: 0px;
+$service-phone-offset-x: -350px;
+$service-phone-offset-y: 0px;
+$service-phone-width: 69px;
+$service-phone-height: 69px;
+$service-phone-total-width: 419px;
+$service-phone-total-height: 388px;
+$service-phone-image: '../img/sprite.png';
+$service-phone: (350px, 0px, -350px, 0px, 69px, 69px, 419px, 388px, '../img/sprite.png', 'service-phone', );
+$service-report-name: 'service-report';
+$service-report-x: 0px;
+$service-report-y: 234px;
+$service-report-offset-x: 0px;
+$service-report-offset-y: -234px;
+$service-report-width: 83px;
+$service-report-height: 83px;
+$service-report-total-width: 419px;
+$service-report-total-height: 388px;
+$service-report-image: '../img/sprite.png';
+$service-report: (0px, 234px, 0px, -234px, 83px, 83px, 419px, 388px, '../img/sprite.png', 'service-report', );
+$spritesheet-width: 419px;
+$spritesheet-height: 388px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($api, $arrow-right, $integration-bitrix, $integration-insales, $integration-wix, $intro, $popup-close, $service-address, $service-callcenter, $service-delivery, $service-grade, $service-location, $service-phone, $service-report, );
+$spritesheet: (419px, 388px, '../img/sprite.png', $spritesheet-sprites, );
+
+
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    &.icon-#{$sprite-name} {
+      width: nth($sprite, 5);
+      height: nth($sprite, 6);
+      $sprite-offset-x: nth($sprite, 3);
+      $sprite-offset-y: nth($sprite, 4);
+      background-position: $sprite-offset-x  $sprite-offset-y;
+    }
+  }
+}

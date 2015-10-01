@@ -1,0 +1,65 @@
+.b-welcome {
+  position: relative;
+  height: 1117px;
+  z-index: 1;
+
+  .welcome {
+
+
+    &-wrapper {
+      @include container();
+    }
+
+    &-image {
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      @include loadBg {
+        background-image: url($img + 'bg-main.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        height: 460px;
+        @include background-image(linear-gradient(to top, white 0%, transparent 100%));
+      }
+    }
+
+    &-content {
+      @include clearfix;
+      @include span(full);
+      padding-left: span(5);
+      margin-top: 242px;
+      height: 457px;
+    }
+
+    &-slogan {
+      text-shadow: 0 2px 2px rgba(0, 1, 1, 0.2);
+      color: #fff;
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 48px;
+      margin-bottom: 81px;
+    }
+
+    &-intro {
+      @include clearfix;
+      @include span(full nest);
+    }
+
+    &-button {
+      padding: 14px 33px;
+    }
+  }
+}

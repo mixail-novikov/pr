@@ -1,0 +1,46 @@
+.b-request {
+  background-image: url($img + 'bg-request.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 90px 0;
+
+  .request {
+    &-heading {
+      text-align: center;
+      font-size: 34px;
+      line-height: 48px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 36px;
+    }
+
+    &-form {
+      @include clearfix();
+      margin-bottom: 46px;
+
+      @include with-layout((gutters: 12/60)) {
+        @include margin(null -1*gutter());
+        &-input {
+          &-holder {
+            @include span(8);
+          }
+        }
+
+        &-button {
+          width: 100%;
+
+          &-holder {
+            @include span(4);
+          }
+        }
+      }
+    }
+
+    &-text {
+      text-align: center;
+      font-size: 28px;
+      line-height: 48px;
+    }
+  }
+}

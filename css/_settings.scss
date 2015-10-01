@@ -1,0 +1,14 @@
+$img: '../img/';
+
+/* global susy settings */
+$susy: (
+  columns: 12,
+  gutters: 20/60,
+  column-width: 60px,
+  gutter-position: inside-static,
+  container: 960px,
+  global-box-sizing: border-box,
+  output: float
+);
+
+

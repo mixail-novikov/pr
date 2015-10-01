@@ -1,0 +1,28 @@
+.b-popup {
+  &.popup-request {
+    position: relative;
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+
+    .mfp-close {
+      overflow: hidden;
+      text-indent: 100%;
+      @extend .b-icon;
+      @extend .b-icon.icon-popup-close;
+      right: 10px;
+      top: 10px;
+    }
+
+    .popup {
+      &-button {
+        width: 100%;
+
+        &-holder {
+          padding: 0 35px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.b-button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background: #fd0b3b;
+  font-size: 28px;
+  line-height: 57px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  text-decoration: none;
+  padding: 14px;
+
+  .button-icon {
+    margin-right: 10px;
+    position: relative;
+    top: -2px;
+  }
+
+  &:hover {
+    color: #fff;
+    background: lighten(#fd0b3b, 10%);
+  }
+
+  &.button-transparent {
+    border: 1px solid #ffffff;
+    background: transparent;
+  }
+
+  &.button-small {
+    font-size: 16px;
+    line-height: 1;
+    padding: 11px 20px;
+  }
+}
