@@ -1,5 +1,10 @@
-$headingFont: 'Open Sans', serif;
-$baseFont: 'Open Sans', sans-serif;
+@include font-face("DINRoundPro", "font/DINRoundPro-Light", 300, $file-formats: woff);
+@include font-face("DINRoundPro", "font/DINRoundPro-Regular", 400, $file-formats: woff);
+@include font-face("DINRoundPro", "font/DINRoundPro-Medium", 600, $file-formats: woff);
+@include font-face("DINRoundPro", "font/DINRoundPro-Bold", 700, $file-formats: woff);
+
+$headingFont: 'DINRoundPro', serif;
+$baseFont: 'DINRoundPro', sans-serif;
 
 @import "html";
 @import "headings";
